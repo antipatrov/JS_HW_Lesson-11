@@ -1,0 +1,175 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: center;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 98.04%;
+            height: 75px;
+            width: 1600px;
+            border-radius: 0px;
+            background: #222222;
+        }
+        
+        .main {
+            display: flex;
+            flex-wrap: nowrap;
+            height: 764px;
+            width: 1600px;
+            left: 0px;
+            top: 75px;
+            border-radius: 0px;
+            background: #F1E4E6;
+        }
+        
+        .main-block1 {}
+        
+        .main-block2 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 799.42px;
+        }
+        
+        .brand-name {
+            left: 55.75%;
+            right: 20.69%;
+            top: 9.54%;
+            bottom: 88.04%;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 58px;
+            color: #222222;
+        }
+        
+        .image-main {
+            height: 764px;
+            width: 800.5800170898438px;
+            left: 0px;
+            top: 75px;
+            border-radius: 0px;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .fetured-items {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 1140px;
+            height: 1395px;
+            left: 230px;
+            top: 1470px;
+            border: 1px solid #000;
+        }
+        
+        .card-product {
+            height: 581px;
+            width: 360.0000305175781px;
+            left: 230px;
+            top: 1577px;
+            border-radius: 0px;
+            background: #F8F8F8;
+            border: 1px solid #000;
+        }
+        
+        .image {
+            height: 419.9999694824219px;
+            width: 360.0000305175781px;
+            left: 230px;
+            top: 1576px;
+            border-radius: 0px;
+            background: #F7E4E2;
+            object-fit: contain;
+        }
+        
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 24px 16px;
+            gap: 16px;
+            left: 14.38%;
+            right: 63.12%;
+            top: 52.17%;
+            bottom: 43.5%;
+        }
+        
+        .name {
+            width: 148.11px;
+            height: 16px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: #000000;
+        }
+        
+        .description {
+            width: 314.74px;
+            height: 51px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #5D5D5D;
+        }
+        
+        .price {
+            height: 19px;
+            width: 52.4571418762207px;
+            left: 16px;
+            top: 123px;
+            border-radius: 0px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #F16D7F;
+        }
+        
+        .more-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 47px;
+            width: 211px;
+            left: 695.5px;
+            top: 2817.5px;
+            border-radius: 0px;
+            bottom: 25.17%;
+            border: 1px solid #FF6A6A;
+        }
+        
+        .cont-btn {
+            display: flex;
+            justify-content: center;
+            width: 1140px;
+        }
+        
+        .text-more-btn {
+            left: 45.88%;
+            right: 45.75%;
+            top: 73.98%;
+            bottom: 25.52%;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #F26376;
+        }

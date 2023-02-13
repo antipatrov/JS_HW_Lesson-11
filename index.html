@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <header class="header">
+            <div class="logo"></div>
+            <div class="search"></div>
+            <div class="menu"></div>
+            <div class="profile"></div>
+            <div class="basket"></div>
+
+        </header>
+
+        <main class="main">
+
+        </main>
+        <section class="fetured-items"></section>
+    </div>
+    <script src="data.js"></script>
+    <script>
+        const data = JSON.parse(dataProducts);
+        const feturedItemsEls = document.querySelector('.fetured-items');
+
+        data.forEach(element => {
+
+
+            const cardProductEl = document.createElement('div');
+            cardProductEl.classList.add('card-product');
+            feturedItemsEls.appendChild(cardProductEl);
+
+            const cardImgEl = document.createElement('img');
+            cardImgEl.classList.add('image');
+            cardImgEl.src = element.image;
+            cardProductEl.appendChild(cardImgEl);
+
+            const cardContentEl = document.createElement('div');
+            cardContentEl.classList.add('card-content');
+            cardProductEl.appendChild(cardContentEl);
+
+            const nameEl = document.createElement('p');
+            nameEl.classList.add('name');
+            nameEl.textContent = element.name;
+            cardContentEl.appendChild(nameEl);
+
+            const cardDescriptionEl = document.createElement('p');
+            cardDescriptionEl.classList.add('description');
+            cardDescriptionEl.textContent = element.description;
+            cardContentEl.appendChild(cardDescriptionEl);
+
+            const priceProductEl = document.createElement('p');
+            priceProductEl.classList.add('price');
+            priceProductEl.textContent = element.price;
+            cardContentEl.appendChild(priceProductEl);
+
+        });
+
+        const containerMoreBtnEl = document.createElement('div');
+        containerMoreBtnEl.classList.add('cont-btn');
+        feturedItemsEls.appendChild(containerMoreBtnEl);
+
+        const moreButtonEl = document.createElement('btn');
+        moreButtonEl.classList.add('more-btn');
+        containerMoreBtnEl.appendChild(moreButtonEl);
+
+        const textMoreBtnEl = document.createElement('h4');
+        textMoreBtnEl.classList.add('text-more-btn');
+        textMoreBtnEl.textContent = 'Browse All Product'
+        moreButtonEl.appendChild(textMoreBtnEl);
+    </script>
+
+</body>
+
+</html>
